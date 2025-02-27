@@ -3,7 +3,7 @@
 'use strict';
 
 import React from 'react';
-import { FlatList } from 'react-native';
+import Animated from 'react-native-reanimated';
 import SwipeableRow from './SwipeableRow';
 
 // import type { Props as FlatListProps } from 'react-native';
@@ -73,7 +73,7 @@ class SwipeableFlatList extends React.Component {
 
     render() {
         return (
-            <FlatList
+            <Animated.FlatList
                 {...this.props}
                 ref={ref => {
                     this._flatListRef = ref;
