@@ -3,7 +3,7 @@
 'use strict';
 
 import React from 'react';
-import { Animated } from 'react-native';
+import { Animated } from 'react-native-reanimated';
 import SwipeableRow from './SwipeableRow';
 
 // import type { Props as FlatListProps } from 'react-native';
