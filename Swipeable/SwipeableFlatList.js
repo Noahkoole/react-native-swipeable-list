@@ -3,7 +3,7 @@
 'use strict';
 
 import React from 'react';
-import { FlatList } from 'react-native';
+import { Animated } from 'react-native';
 import SwipeableRow from './SwipeableRow';
 
 // import type { Props as FlatListProps } from 'react-native';
@@ -57,7 +57,7 @@ class SwipeableFlatList extends React.Component {
     _shouldBounceFirstRowOnMount = false;
 
     static defaultProps = {
-        ...FlatList.defaultProps,
+        ...Animated.FlatList.defaultProps,
         bounceFirstRowOnMount: true,
         renderQuickActions: () => null,
     };
@@ -73,7 +73,7 @@ class SwipeableFlatList extends React.Component {
 
     render() {
         return (
-            <FlatList
+            <Animated.FlatList
                 {...this.props}
                 ref={ref => {
                     this._flatListRef = ref;
